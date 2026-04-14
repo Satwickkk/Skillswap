@@ -1,0 +1,100 @@
+.profile-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.profile-card {
+  text-align: center;
+  padding: 32px 24px;
+}
+
+.profile-avatar-large {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #e53935;
+  color: white;
+  font-size: 32px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.profile-name { font-size: 20px; font-weight: 800; color: #1a1a2e; margin-bottom: 4px; }
+.profile-role {
+  font-size: 13px;
+  color: #6c757d;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.profile-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.pstat { flex: 1; }
+.pstat-val { font-size: 22px; font-weight: 800; color: #1a1a2e; }
+.pstat-label { font-size: 11px; color: #6c757d; margin-top: 2px; }
+.pstat-divider { width: 1px; height: 30px; background: #e9ecef; }
+
+.profile-id { text-align: left; }
+.profile-id > span { display: block; margin-bottom: 6px; }
+
+.id-box {
+  background: #f8fafc;
+  border: 1px dashed #dee2e6;
+  border-radius: 8px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: background 0.15s;
+  position: relative;
+}
+
+.id-box:hover { background: #ffebee; border-color: #e53935; }
+
+.id-box code {
+  font-size: 11px;
+  color: #495057;
+  word-break: break-all;
+  font-family: monospace;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.copy-hint { font-size: 11px; color: #e53935; font-weight: 600; }
+
+.role-select { display: flex; gap: 12px; }
+.role-btn {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  background: white;
+  font-size: 14px;
+  font-weight: 600;
+  color: #495057;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.role-btn.active { border-color: #e53935; background: #ffebee; color: #e53935; }
+
+.success-msg {
+  background: #dcfce7;
+  color: #16a34a;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}

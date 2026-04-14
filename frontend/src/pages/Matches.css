@@ -1,0 +1,140 @@
+.match-count {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+}
+
+.loading {
+  text-align: center;
+  padding: 60px;
+  color: #6c757d;
+  font-size: 16px;
+}
+
+.matches-layout {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Match List Panel */
+.match-list-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.match-card {
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+  transition: all 0.2s;
+}
+
+.match-card:hover { border-color: #fecaca; box-shadow: 0 4px 12px rgba(229,57,53,0.1); }
+.match-card.active { border-color: #e53935; box-shadow: 0 4px 16px rgba(229,57,53,0.15); }
+
+.match-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.match-user-info { flex: 1; }
+.match-user-name { font-size: 15px; font-weight: 700; color: #1a1a2e; }
+.match-user-role { font-size: 12px; color: #6c757d; margin-top: 2px; text-transform: capitalize; }
+.match-rating { font-size: 12px; color: #f59e0b; margin-top: 2px; }
+
+.match-score-badge {
+  background: #e53935;
+  color: white;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.match-skills-preview { display: flex; flex-direction: column; gap: 8px; }
+
+.match-skill-row { display: flex; flex-direction: column; gap: 4px; }
+
+.skill-row-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.skill-row-label.can-teach { color: #e53935; }
+.skill-row-label.you-teach { color: #2563eb; }
+
+/* Match Detail Panel */
+.match-detail-panel {
+  position: sticky;
+  top: 80px;
+}
+
+.detail-placeholder {
+  background: white;
+  border-radius: 14px;
+  padding: 60px 40px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+  color: #6c757d;
+}
+
+.detail-placeholder h3 { font-size: 18px; font-weight: 700; color: #1a1a2e; margin: 12px 0 8px; }
+
+.match-detail {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f1f3f5;
+  margin-bottom: 20px;
+}
+
+.detail-header h2 { font-size: 20px; font-weight: 800; color: #1a1a2e; margin-bottom: 4px; }
+.detail-role { font-size: 13px; color: #6c757d; text-transform: capitalize; margin-bottom: 6px; }
+.detail-meta { display: flex; gap: 12px; font-size: 13px; font-weight: 600; color: #495057; }
+
+.detail-section { margin-bottom: 20px; }
+.detail-section-label {
+  background: #fff3e0;
+  color: #e65100;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.detail-section-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #495057;
+  margin-bottom: 8px;
+}
+
+.offered-title { color: #e53935; }
+.wanted-title { color: #2563eb; }
+
+.detail-tags { display: flex; flex-wrap: wrap; gap: 6px; }
