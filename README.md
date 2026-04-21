@@ -158,31 +158,6 @@ Open http://localhost:3000 in your browser.
 
 All protected routes require header: `Authorization: Bearer <token>`
 
----
-
-## Troubleshooting
-
-**"MongoDB connection refused"**
-- Make sure MongoDB service is running:
-  - Windows: `net start MongoDB` in Command Prompt (Admin)
-  - macOS: `brew services start mongodb-community`
-  - Linux: `sudo systemctl start mongod`
-
-**"Port 5000 already in use"**
-- Change `PORT=5001` in `backend/.env`
-- Also update the proxy in `frontend/package.json` to `"proxy": "http://localhost:5001"`
-
-**"CORS error" in browser**
-- Make sure `CLIENT_URL=http://localhost:3000` in `.env` matches your frontend URL exactly
-
-**"npm not found"**
-- Install Node.js from https://nodejs.org (LTS version)
-
-**Sessions not matching**
-- Go to Profile page → copy your User ID
-- Share with the other user so they can enter it in the session form
-
----
 
 ## Tech Stack Summary
 
